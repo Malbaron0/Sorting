@@ -39,10 +39,13 @@ public class Sorting {
 			}
 		}
 		
-		System.out.println("Sentences in order largest to smallest \n");
+		PrintWriter sent = new PrintWriter("Sorted.txt");
+		sent.println("Sentences in order largest to smallest \n");
 		for (int i = 0; i < words.length-1; i++){
-			System.out.println((i+1)+":" + words[i]);
+			sent.println((i+1)+":" + words[i]);
 		}
+		
+		sent.close();
 		
 	}
 }
